@@ -1,0 +1,94 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* root variables */
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+
+    --font: 'outfit', sans-serif;
+    --bold: 700;
+    --regular: 400;
+    --size-of-p-text: 15px;
+}
+
+/*================== main design ===================*/
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    overflow-x: hidden;
+    background: var(--light-gray);
+    font-family: var(--font);
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*================== main container ===================*/
+.main-container{
+    width: 280px;
+    max-width: calc(100% - 20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.main-container .qr-image{
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.qr-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-container .title{
+    color: var(--dark-blue);
+    font-weight: var(--bold);
+    padding-bottom: 20px;
+}
+
+.main-container .details{
+    font-size: var(--size-of-p-text);
+    font-weight: var(--regular);
+    padding-bottom: 10px;
+    color: var(--grayish-blue);
+}
+
+
+.attribution {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    text-align: center;
+    bottom: 0;
+    font-weight: var(--bold);
+    color: var(--grayish-blue);
+}
+
+.attribution a {
+    color: var(--dark-blue);
+}
